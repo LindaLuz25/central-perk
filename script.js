@@ -20,16 +20,14 @@ setInterval(createHeart, 300);
 const audioElement = document.getElementById("audio1");
 const btnAudioControl = document.getElementById("btnAudioControl");
 
-// Inicialmente reproducimos el audio
-audioElement.play();
-audioElement.volume = 0.5; // Volumen inicial
-
 // Agregamos el evento click al botón
 btnAudioControl.addEventListener("click", () => {
   if (audioElement.muted) {
     // Si está silenciado, activamos el sonido
     audioElement.muted = false;
     btnAudioControl.innerText = "🔊"; // Cambiamos el ícono
+    audioElement.play();
+    audioElement.volume = 0.5; // Volumen inicial
   } else {
     // Si no está silenciado, lo silenciamos
     audioElement.muted = true;
