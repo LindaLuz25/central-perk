@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asul&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lobster&family=Londrina+Sketch&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:wght@100;200;300;400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asul&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lobster&family=Londrina+Sketch&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:wght@100;200;300;400;500;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Central Perk</title>
+  </head>
+  <body>
+    <div class="head">
+      <div class="logo">
+        <figure>
+          <img src="img/logoCafeteria.png" />
+        </figure>
+      </div>
+      <nav class="navbar">
+        <a href="/">Inicio</a>
+        <a href="#recomendados">Recomendados</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+    </div>
+    <audio id="audio1" src="img/audio2.mp3" loop></audio>
+    <div class="audio-control">
+      <button id="btnAudioControl" class="btnAudioControl">🔊</button>
+    </div>
+    <header class="content header">
+      <video autoplay muted loop>
+        <source src="img/central-Perk.mp4" type="video/mp4" />
+        Tu navegador no soporta videos HTML5.
+      </video>
+      <div class="inicio">
+        <figure>
+          <img src="img/logoi2.png" />
+        </figure>
+        <p>
+          Bienvenido al mágico mundo de Central Perk, el icónico café donde las
+          historias inolvidables de *Friends* cobraron vida.
+        </p>
+        <a href="#recomendados" class="btn">Muestrame</a>
+      </div>
+    </header>
+
+    <section class="content cards" id="recomendados">
+      <h2 class="titleP">Recomendados</h2>
+      <p class="paP">Prueba nuestros productos más solicitados</p>
+      <div class="container">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="img/drink1.jpg" alt="" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Vancouver Montains, Canada</span>
+              <h2 class="card__title">The great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+              <div class="stars">
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="img/drink4.jpg" alt="" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Vancouver Montains, Canada</span>
+              <h2 class="card__title">The great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+              <div class="stars">
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="img/drink6.jpg" alt="" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Vancouver Montains, Canada</span>
+              <h2 class="card__title">The great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+              <div class="stars">
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="img/drink3.jpg" alt="" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Vancouver Montains, Canada</span>
+              <h2 class="card__title">The great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+              <div class="stars">
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+                <i class="fas fa-star" id="estrellas"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content masProductos" id="productos">
+      <article class="contain">
+        <h2 class="titlePro">Productos</h2>
+        <p class="pProdu">Se te antojan verdad... 😋</p>
+        <div class="products">
+          <div class="cardproducto">
+            <img src="/img/drink5.jpg" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+          <div class="cardproducto">
+            <img src="/img/product1.jpg" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+          <div class="cardproducto">
+            <img src="/img/product2.jpg" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+          <div class="cardproducto">
+            <img src="/img/product4.webp" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+          <div class="cardproducto">
+            <img src="/img/product5.jpg" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+          <div class="cardproducto">
+            <img src="/img/product6.jpeg" class="imgcard" alt="..." />
+            <div class="cardBody">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btnProductos">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://centralperk.com/pages/shop-coffee"
+          class="btn"
+          target="_blank"
+          >Ver más</a
+        >
+      </article>
+    </section>
+
+    <section class="content about" id="nosotros">
+      <h2>Nosotros</h2>
+      <div class="us">
+        <figure>
+          <img src="img/creacionCentralPerk.webp" />
+        </figure>
+        <div class="text-content">
+          <p>
+            En el corazón de Nueva York, Central Perk es más que una cafetería:
+            es un punto de encuentro para amigos, soñadores y amantes del café.
+            Desde nuestros inicios, hemos creado un espacio donde las risas, las
+            historias y las grandes ideas se mezclan con el aroma de un espresso
+            recién preparado.
+          </p>
+          <p>
+            Nuestro famoso sofá naranja ha sido testigo de momentos
+            inolvidables, convirtiéndose en el epicentro de conversaciones que
+            marcan la vida. En Central Perk, celebramos la autenticidad, la
+            amistad y, por supuesto, ¡un buen café servido con una sonrisa!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Central Perk. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/centralperk/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img src="img/ig_icon.webp" alt="Instagram" />
+        </a>
+        <a
+          href="https://x.com/centralperk"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <img src="img/twitter_icon.png" alt="Twitter" />
+        </a>
+        <a
+          href="https://www.facebook.com/CentralPerkCoffee/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img src="img/face_icon.png" alt="Facebook" />
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
