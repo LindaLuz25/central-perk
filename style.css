@@ -10,9 +10,6 @@ body {
   font-family: sans-serif;
 }
 
-
-
-
 /*NAVBAR   AAAA*/
 .head {
   display: flex;
@@ -53,7 +50,6 @@ body {
   background-color: #50792f;
 }
 
-
 /*pantalla pirncipallll*/
 .header {
   position: relative;
@@ -89,7 +85,7 @@ p {
   z-index: 100;
 }
 
-.content video{
+.content video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,8 +138,6 @@ p {
   background-color: #80e29e;
   transform: scale(1.1);
 }
-
-
 
 /*PRODUCTOSSSSS*/
 .titleP {
@@ -210,13 +204,15 @@ p {
   display: block;
   font-size: 0.875rem;
   margin-bottom: 0.75rem;
+  font-family: "Playwrite HR Lijeva", serif;
 }
 
 .card__title {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #262626;
+  color: #0e4222;
   margin-bottom: 0.75rem;
+  font-family: "Lobster";
 }
 
 .card__button {
@@ -294,7 +290,7 @@ p {
   background-size: cover;
   background-attachment: fixed;
   text-align: left;
-  padding: 20px;
+  padding: 20px 80px;
 }
 .masProductos .titlePro {
   font-size: 4rem;
@@ -314,7 +310,7 @@ p {
   gap: 20px;
   max-width: 65%;
   margin-left: 0;
-  padding-left: 5px;
+  padding-left: 1px;
 }
 .cardproducto {
   width: 100%; /* Ajusta el ancho al de cada columna */
@@ -347,10 +343,11 @@ p {
 }
 
 .card-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 15px;
   color: black;
   padding: 0;
+  font-family: "Playwrite HR Lijeva", serif;
 }
 .btnProductos {
   display: inline-block;
@@ -421,8 +418,8 @@ p {
 
 /*FOOTER CENTRAL PERKKK*/
 .footer {
-  background-color: #21533e; /* Color oscuro elegante */
-  color: #fff; /* Texto blanco */
+  background-color: #21533e;
+  color: #fff;
   text-align: center;
   padding: 20px;
   font-size: 14px;
@@ -431,7 +428,7 @@ p {
 
 .footer p {
   margin: 0;
-  margin-bottom: 10px; /* Espacio entre el texto y los íconos */
+  margin-bottom: 10px;
 }
 
 .social-icons {
@@ -447,9 +444,8 @@ p {
 }
 
 .social-icons a img:hover {
-  transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+  transform: scale(1.2);
 }
-
 
 html {
   scroll-behavior: smooth;
