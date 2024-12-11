@@ -49,6 +49,13 @@ body {
 .navbar a:hover {
   background-color: #50792f;
 }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /*pantalla pirncipallll*/
 .header {
@@ -189,9 +196,9 @@ p {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
   position: absolute;
-  bottom: 0; /* Cambiado para que esté visible */
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, 100%); /* Mantén un leve deslizamiento inicial */
+  transform: translate(-50%, 100%);
   opacity: 0;
   margin-inline: auto;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -243,47 +250,6 @@ p {
   color: rgb(226, 226, 17);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-/* @media screen and (max-width: 340px) {
-  .cards {
-    margin-inline: 1rem;
-  }
-
-  .card__data {
-    width: 250px;
-    padding: 1rem;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .card__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-  }
-}
-
-
-@media screen and (min-width: 1120px) {
-  .container {
-    height: 100vh;
-  }
-
-  .card__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .card__img {
-    width: 358px;
-  }
-
-  .card__data {
-    width: 316px;
-    padding-inline: 2.5rem;
-  }
-} */
-
 /*cardsMasProductos*/
 .masProductos {
   background: url(img/img5.jpg) no-repeat center;
@@ -313,7 +279,7 @@ p {
   padding-left: 1px;
 }
 .cardproducto {
-  width: 100%; /* Ajusta el ancho al de cada columna */
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -328,7 +294,7 @@ p {
 .imgcard {
   width: 100%;
   height: 150px;
-  object-fit: cover; /* Ajustar imágenes dentro del contenedor */
+  object-fit: cover;
 }
 .cardBody {
   padding: 15px;
@@ -369,26 +335,29 @@ p {
 }
 
 .us {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
+  font-size: 8vw;
+  color: #ffffff;
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 80%;
 }
 
 .us figure {
   flex: 1;
   margin: 0;
-  margin-left: 200px;
 }
 
 .us figure img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 550px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: scale(0.95);
   transition: transform 0.3s ease-in-out;
 }
+
 .us figure img:hover {
   transform: scale(1);
 }
@@ -399,7 +368,6 @@ p {
 }
 
 #nosotros h2 {
-  margin-bottom: 15px;
   font-size: 64px;
   letter-spacing: 2px;
   font-family: "Lobster";
@@ -411,8 +379,8 @@ p {
   font-size: 30px;
   line-height: 1.6;
   color: #2c2a2a;
-  margin-bottom: 15px;
-  padding: 30px;
+  margin-bottom: 5px;
+  padding: 8px;
   font-family: "Playwrite HR Lijeva", serif;
 }
 
@@ -462,5 +430,223 @@ html {
 @keyframes fall {
   to {
     transform: translateY(105vh);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card__container,
+  .masProductos .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header img{
+    max-width: 250px;
+  }
+  .card__container,
+  .masProductos .products {
+    grid-template-columns: 1fr;
+  }
+  .masProductos .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .navbar a {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 0 20px;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card__data {
+    width: 200px;
+    padding-inline: 1.5rem;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #21533e;
+    border: 1px solid #21533e;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(240, 228, 228, 0.1);
+  }
+
+  /*PARA EL NOSOYTROSSSS*/
+  .us {
+    font-size: 6vw;
+    max-width: 90%;
+  }
+
+  .us figure {
+    margin-left: 0;
+  }
+
+  #nosotros h2 {
+    font-size: 48px;
+  }
+
+  .text-content p {
+    font-size: 20px;
+    padding: 20px;
+  }
+  /*-----------*/
+  .navbar.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /*mas productossss*/
+
+  .masProductos .products {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
+  .masProductos {
+    padding: 20px 20px;
+  }
+
+  .masProductos .titlePro {
+    font-size: 2.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  .btnProductos {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card__container,
+  .masProductos .products {
+    grid-template-columns: 1fr;
+  }
+  .masProductos .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .card__article {
+    margin: 0 auto;
+  }
+  p {
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+
+  .navbar a {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .card__data {
+    width: 90%;
+    padding-inline: 1rem;
+    font-size: 0.9rem;
+  }
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+
+  /*nostrosss*/
+  .us {
+    font-size: 8vw;
+    max-width: 95%;
+  }
+
+  .text-content {
+    padding: 15px;
+  }
+
+  #nosotros h2 {
+    font-size: 36px;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .us figure {
+    flex: 1;
+    margin: 0;
+  }
+
+  .us figure img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+  }
+  .us figure img:hover {
+    transform: scale(1);
+  }
+
+  /*MAS PRODUCTOSSS*/
+  .masProductos .titlePro {
+    font-size: 2rem; 
+  }
+
+  .masProductos .products {
+    grid-template-columns: 1fr; 
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 0.9rem; 
+  }
+
+  .card-text {
+    font-size: 0.7rem; 
+  }
+
+  .btnProductos {
+    font-size: 0.7rem; 
+    padding: 8px 12px; 
   }
 }

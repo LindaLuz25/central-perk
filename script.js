@@ -34,3 +34,14 @@ btnAudioControl.addEventListener("click", () => {
     btnAudioControl.innerText = "🔇"; // Cambiamos el ícono
   }
 });
+
+
+
+/*MENUUUU */
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
+
+// Evento de clic en el botón hamburguesa
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('show'); // Alternar la clase 'show'
+});
