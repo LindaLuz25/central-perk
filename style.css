@@ -209,7 +209,7 @@ p {
   opacity: 0;
   margin-inline: auto;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  width: 310px;
+  width: 390px;
   padding-inline: 2.5rem;
   text-align: left;
 }
@@ -452,11 +452,7 @@ html {
   .masProductos .products {
     grid-template-columns: 1fr;
     gap: 15px; /* Añadido gap consistente */
-  }
-
-  .masProductos .card {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    margin-left: 0;
   }
 
   .navbar {
@@ -494,7 +490,7 @@ html {
   }
 
   .card__data {
-    width: 200px;
+    width: 390px;
     padding-inline: 1.5rem;
   }
 
@@ -530,6 +526,19 @@ html {
   .header .inicio img {
     width: 330px;
     max-width: 100%;
+  }
+
+  .content {
+    display: flex;
+    height: max-content;
+    padding: 20px;
+  }
+  #productos .contain {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
   }
 }
 
