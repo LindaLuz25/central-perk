@@ -550,7 +550,8 @@ html {
 
   /*nostrosssss*/
   #nosotros h2 {
-    margin-top: 35px;
+    margin-top: 38px;
+
   }
   .us figure {
     margin: 0;
@@ -560,7 +561,7 @@ html {
   }
 
   .text-content p {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 5px;
   }
 
