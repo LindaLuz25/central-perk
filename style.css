@@ -271,7 +271,7 @@ p {
   font-size: 4rem;
   font-family: "Lobster";
   color: rgb(172, 247, 206);
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .masProductos .pProdu {
   text-align: left;
@@ -432,7 +432,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+/*copos de nieve*/
 .heart {
   position: fixed;
   top: -1vh;
@@ -575,10 +575,12 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  /*Logo header*/
   .logo {
     width: 100px;
     margin-left: 5px;
   }
+  /*dimensionaes de los cards*/
   .card__container,
   .masProductos .products {
     grid-template-columns: 1fr;
@@ -588,10 +590,13 @@ html {
     max-width: 350px;
     margin: 0 auto;
   }
+  .masProductos .products {
+    justify-content: center;
+  }
   .cardBody {
     text-align: left;
   }
-
+  /*navbar*/
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -658,8 +663,9 @@ html {
   .btnProductos {
     font-size: 0.8rem;
   }
-
+  /*menu lateral*/
   .hamburger {
+    color: white;
     display: block;
     padding: 5px 15px;
   }
@@ -688,6 +694,9 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .footer p{
+    font-size: 1rem;
   }
 }
 
@@ -761,4 +770,5 @@ html {
     height: max-content;
     padding: 15px;
   }
+  /*footer*/
 }
